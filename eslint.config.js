@@ -9,9 +9,7 @@ module.exports = defineConfig([
     settings: {
       'import/resolver': {
         alias: {
-          map: [
-            ['@', '.'],
-          ],
+          map: [['@', './']],
           extensions: ['.js', '.jsx', '.json'],
         },
       },

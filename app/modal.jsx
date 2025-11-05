@@ -1,8 +1,8 @@
-import { Link, useRouter } from 'expo-router';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { Link, useRouter } from "expo-router";
+import { StyleSheet, TouchableOpacity } from "react-native";
 
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
+import { ThemedText } from "@/components/themed-text";
+import { ThemedView } from "@/components/themed-view";
 
 export default function ModalScreen() {
   const router = useRouter();
@@ -14,11 +14,13 @@ export default function ModalScreen() {
         <ThemedText type="link">Go to home screen</ThemedText>
       </Link>
 
-      <TouchableOpacity 
+      <TouchableOpacity
         style={styles.button}
         onPress={() => router.dismissAll()}
       >
-        <ThemedText style={styles.buttonText}>Navigate to Root Index</ThemedText>
+        <ThemedText style={styles.buttonText}>
+          Navigate to Root Index
+        </ThemedText>
       </TouchableOpacity>
     </ThemedView>
   );
@@ -27,8 +29,8 @@ export default function ModalScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
     padding: 20,
   },
   link: {
@@ -36,15 +38,15 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: "#007AFF",
     paddingHorizontal: 30,
     paddingVertical: 15,
     borderRadius: 8,
     marginTop: 20,
   },
   buttonText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });
